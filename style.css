@@ -290,15 +290,22 @@ h2 {
     font-weight: 600;
 }
 
-.project-sections {
+/* NEW: 2-column grid for project sections */
+.project-sections-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 40px;
 }
 
+.project-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .project-block {
-    margin-bottom: 35px;
+    margin-bottom: 0;
 }
 
 .project-block h4 {
@@ -314,6 +321,11 @@ h2 {
     font-size: 0.93rem;
     color: #555;
     line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.project-block p:last-child {
+    margin-bottom: 0;
 }
 
 .project-block ul {
@@ -363,11 +375,12 @@ h2 {
     margin-top: 6px;
 }
 
-/* Video Gallery */
+/* Video Gallery - 2x2 Grid */
 .video-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    grid-template-rows: auto auto;
+    gap: 20px;
 }
 
 .video-item video {
@@ -375,6 +388,8 @@ h2 {
     border-radius: 8px;
     border: 1px solid #e2e8f0;
     display: block;
+    background: #000;
+    object-fit: contain;
 }
 
 .video-item p {
@@ -383,7 +398,27 @@ h2 {
     text-align: center;
     margin-top: 8px;
 }
+/* Single video display (for projects with one video) */
+.video-single {
+    width: 100%;
+}
 
+.video-single video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    display: block;
+    background: #000;
+    object-fit: contain;
+}
+
+.video-single p {
+    font-size: 0.82rem;
+    color: #888;
+    text-align: center;
+    margin-top: 8px;
+}
 /* ============================================
    SKILLS
    ============================================ */
@@ -604,7 +639,8 @@ footer {
         font-size: 1.2rem;
     }
 
-    .project-sections {
+    /* NEW: Stack project sections on mobile */
+    .project-sections-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
@@ -619,10 +655,10 @@ footer {
         height: 150px;
     }
 
-    /* Video gallery - stack vertically */
+    /* Video gallery - stack all on mobile */
     .video-gallery {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 16px;
     }
 
     /* Skills grid - stack vertically */
