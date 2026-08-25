@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,8 +76,6 @@
             </div>
         </div>
     </section>
-
-    
 
     <!-- ===== EXPERIENCE ===== -->
     <section id="experience">
@@ -214,51 +211,52 @@
 
                 </div>
 
-                <!-- PROJECT IMAGES -->
+                <!-- SIDE-BY-SIDE MEDIA SECTION: 2x2 IMAGES (LEFT) + LIVE COUNTING VIDEO (RIGHT) -->
                 <div class="project-block">
-                    <h4>Project Images</h4>
-                    <div class="image-gallery">
-                        <figure>
-                            <img src="images/masking.png" alt="Snapshot Masking Process">
-                            <figcaption>Snapshot Masking Process</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/empty.png" alt="Detection Result Empty Tub">
-                            <figcaption>Detection Result Empty Tub</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/full.png" alt="Detection Result Full Tub">
-                            <figcaption>Detection Result Full Tub</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/random.png" alt="Detection Result Random Tub">
-                            <figcaption>Detection Result Random Tub</figcaption>
-                        </figure>
-                    </div>
-                </div>
+                    <div class="media-side-by-side" style="display: flex; gap: 20px; align-items: start; flex-wrap: wrap;">
+                        
+                        <!-- LEFT: 2x2 Image Grid -->
+                        <div style="flex: 1; min-width: 300px;">
+                            <h4 style="margin-top: 0;">Project Images</h4>
+                            <div class="image-gallery" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                                <figure style="margin: 0;">
+                                    <img src="images/masking.png" alt="Snapshot Masking Process" style="width: 100%; display: block;">
+                                    <figcaption>Snapshot Masking Process</figcaption>
+                                </figure>
+                                <figure style="margin: 0;">
+                                    <img src="images/empty.png" alt="Detection Result Empty Tub" style="width: 100%; display: block;">
+                                    <figcaption>Detection Result Empty Tub</figcaption>
+                                </figure>
+                                <figure style="margin: 0;">
+                                    <img src="images/full.png" alt="Detection Result Full Tub" style="width: 100%; display: block;">
+                                    <figcaption>Detection Result Full Tub</figcaption>
+                                </figure>
+                                <figure style="margin: 0;">
+                                    <img src="images/random.png" alt="Detection Result Random Tub" style="width: 100%; display: block;">
+                                    <figcaption>Detection Result Random Tub</figcaption>
+                                </figure>
+                            </div>
+                        </div>
 
-                <!-- PROJECT VIDEOS -->
-                <div class="project-block">
-                    <h4>Demo Videos</h4>
-                    <div class="video-gallery" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                        <div class="video-item">
-                            <video controls>
-                                <source src="videos/counting vid.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <p>Live Counting Visual Display</p>
+                        <!-- RIGHT: Live Counting Display Video -->
+                        <div style="flex: 1; min-width: 300px;">
+                            <h4 style="margin-top: 0;">Live Display Video</h4>
+                            <div class="video-item">
+                                <video controls style="width: 100%; max-width: 100%; display: block;">
+                                    <source src="videos/counting vid.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p>Live Counting Visual Display</p>
+                            </div>
                         </div>
-                        <div class="video-item">
-                            <video controls>
-                                <source src="videos/program file iterations.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <p>Automated Snapshot Folder Processing</p>
-                        </div>
+
                     </div>
-                    <div class="video-featured" style="margin-top: 20px; width: 100%; box-sizing: border-box;">
+
+                    <!-- FEATURED DEMO VIDEO BELOW -->
+                    <div class="video-featured" style="margin-top: 25px; width: 100%; box-sizing: border-box;">
+                        <h4>System Demo Video</h4>
                         <video controls style="width: 100%; max-width: 100%; display: block; box-sizing: border-box;">
-                            <source src="videos/gui_demo2.mp4" type="video/mp4">
+                            <source src="videos/Blast_vis overlay 2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p>BLAST-VIS Web GUI - Live Batch Management System</p>
@@ -323,7 +321,7 @@
                     <h4>Demo Video</h4>
                     <div class="video-single">
                         <video controls>
-                            <source src="videos/defect_viewer_demo.mp4" type="video/mp4">
+                            <source src="videos/defect Crop Vid.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p>Defect Detection Inspection Viewer - Multi-View Batch Review System</p>
