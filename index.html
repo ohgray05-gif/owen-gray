@@ -213,17 +213,6 @@
 
                 <!-- SIDE-BY-SIDE MEDIA SECTION: 2x2 IMAGES (LEFT) + LIVE COUNTING VIDEO (RIGHT) -->
                 <div class="project-block">
-                    
-                    <!-- 1. FEATURED SYSTEM DEMO VIDEO (PRIORITY LOAD) -->
-                    <div class="video-featured" style="margin-bottom: 25px; width: 100%; box-sizing: border-box;">
-                        <h4>System Demo Video</h4>
-                        <video controls preload="auto" playsinline style="width: 100%; max-width: 100%; display: block; box-sizing: border-box;">
-                            <source src="videos/Blast_vis_overlay_2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p>BLAST-VIS Web GUI - Live Batch Management System</p>
-                    </div>
-
                     <div class="media-side-by-side" style="display: flex; gap: 20px; align-items: start; flex-wrap: wrap;">
                         
                         <!-- LEFT: 2x2 Image Grid -->
@@ -249,12 +238,12 @@
                             </div>
                         </div>
 
-                        <!-- RIGHT: Live Counting Display Video (DELAYED LOAD) -->
+                        <!-- RIGHT: Live Counting Display Video -->
                         <div style="flex: 1; min-width: 300px;">
                             <h4 style="margin-top: 0;">Live Display Video</h4>
                             <div class="video-item">
-                                <video controls preload="none" playsinline style="width: 100%; max-width: 100%; display: block;">
-                                    <source src="videos/Counting Vid.mp4" type="video/mp4">
+                                <video controls style="width: 100%; max-width: 100%; display: block;">
+                                    <source src="videos/counting vid.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <p>Live Counting Visual Display</p>
@@ -263,6 +252,15 @@
 
                     </div>
 
+                    <!-- FEATURED DEMO VIDEO BELOW -->
+                    <div class="video-featured" style="margin-top: 25px; width: 100%; box-sizing: border-box;">
+                        <h4>System Demo Video</h4>
+                        <video controls style="width: 100%; max-width: 100%; display: block; box-sizing: border-box;">
+                            <source src="videos/Blast_vis overlay 2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>BLAST-VIS Web GUI - Live Batch Management System</p>
+                    </div>
                 </div>
 
             </div>
@@ -318,12 +316,12 @@
 
                 </div>
 
-                <!-- PROJECT VIDEO (DELAYED LOAD) -->
+                <!-- PROJECT VIDEO -->
                 <div class="project-block">
                     <h4>Demo Video</h4>
                     <div class="video-single">
-                        <video controls preload="none" playsinline style="width: 100%; max-width: 100%; display: block;">
-                            <source src="videos/defect_Crop_Vid.mp4" type="video/mp4">
+                        <video controls>
+                            <source src="videos/defect Crop Vid.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p>Defect Detection Inspection Viewer - Multi-View Batch Review System</p>
